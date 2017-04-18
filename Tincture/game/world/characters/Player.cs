@@ -18,7 +18,7 @@ namespace Tincture.engine.world.characters
         public Player(State state, string name, float x, float y, float width, float height)
             : base(state, name, x, y, width, height, ZTexture.empty)
         {
-            playerTexture = new Spritesheet(Game.getGraphicsDevice(), 130, 120, ContentManager.playerSpritesheet,
+            playerTexture = new CharacterSpritesheet(Game.getGraphicsDevice(), 130, 120, ContentManager.playerSpritesheet,
                 Tuple.Create("default", 1), Tuple.Create("idleup", 1), Tuple.Create("idleleft", 1), Tuple.Create("idleright", 1),
                 Tuple.Create("walkdown", 10), Tuple.Create("walkleft", 10), Tuple.Create("walkup", 10), Tuple.Create("walkright", 10))
                 .getTexture();

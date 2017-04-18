@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Tincture.engine.graphics
 {
-    class Spritesheet
+    class CharacterSpritesheet
     {
         private ZTexture texture = null;
         private bool textureInitialized = false;
@@ -19,7 +19,7 @@ namespace Tincture.engine.graphics
          * @param stateFrameCountAndNames A collection of tuples as long as the number of distinct rows of animations, with the string
          * representing the name of the state the animation is to be stored in and the int representing the number of frames in that animation.
          **/
-        public Spritesheet(GraphicsDevice device, int vSize, int hSize, Texture2D texture, params Tuple<string, int>[] stateFrameCountAndNames)
+        public CharacterSpritesheet(GraphicsDevice device, int vSize, int hSize, Texture2D texture, params Tuple<string, int>[] stateFrameCountAndNames)
         {
             int x = 0, y = 0;
             foreach (Tuple<string, int> t in stateFrameCountAndNames)

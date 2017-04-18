@@ -41,7 +41,8 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="engine\graphics\Spritesheet.cs" />
+    <Compile Include="engine\graphics\Camera.cs" />
+    <Compile Include="engine\graphics\CharacterSpritesheet.cs" />
     <Compile Include="engine\world\Character.cs" />
     <Compile Include="engine\world\menu\Popup.cs" />
     <Compile Include="game\world\characters\Player.cs" />
